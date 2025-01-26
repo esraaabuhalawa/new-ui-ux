@@ -1,7 +1,7 @@
 <template>
-    <section id="portofolio">
-        <div class="section__heading">
-            <h2> My <span> Work Experience </span></h2>
+    <section id="portofolio" ref="potfolioSection">
+        <div class="section__heading text-center">
+            <h2 :class="{ typewriter: isInView }"> My <span> Work Experience </span></h2>
         </div>
         <div class="container">
             <div class="row">
@@ -86,6 +86,29 @@
         </div>
     </section>
 </template>
+<script>
+export default {
+    data(){
+        return{
+            isInView: false,
+        }
+    },
+    mounted(){
+        const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                this.isInView = true; // Trigger the animation
+                observer.unobserve(this.$refs.potfolioSection); // Stop observing after animation starts
+            }
+            });
+        },
+        { threshold: 0.5 } // Adjust this value for when the animation starts
+        );
+        observer.observe(this.$refs.potfolioSection);
+    }
+}
+</script>
 <style lang="scss" scoped>
 #portofolio {
     margin-top: 80px;

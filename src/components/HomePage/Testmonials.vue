@@ -1,8 +1,8 @@
 <template>
-  <div id="Testmonials">
-    <div class="container pt-35 pb-70 clients">
+  <div id="Testmonials" >
+    <div class="container pt-35 pb-70 clients" ref="testmonials">
       <div class="section__heading text-center">
-        <h2>Testimonials That Speak to <span>My Results</span></h2>
+        <h2 :class="{ typewriter: isInView }">Testimonials That Speak to <span>My Results</span></h2>
       </div>
     </div>
     <div class="container-fluid our-clients overflow-hidden">
@@ -23,7 +23,7 @@
                   engagement. Her creative ideas and problem-solving skills
                   brought our platform to life. Highly recommended!"
                 </p>
-                <h5 class="card-title">Tarek Ahmed </h5>
+                <h5 class="card-title"> Abdelrahman Mohamed </h5>
               </div>
             </div>
             <!--------------->
@@ -39,7 +39,7 @@
                 <p class="card-text">
                   "By God, you make my face shine, Miss Nourhan. Thank you for your work and effort. Your work is very, very wonderful."
                 </p>
-                <h5 class="card-title">Tarek Ahmed </h5>
+                <h5 class="card-title"> Ziyad Essam </h5>
               </div>
             </div>
             <!--------------->
@@ -55,7 +55,7 @@
                 <p class="card-text">
                   "Nourhan's work on our mobile app was revolutionary. Their innovative touch transformed our app into a seamless, engaging, and responsive experience that users now rave about. They truly understand the nuances of mobile UX."
                 </p>
-                <h5 class="card-title">Tarek Ahmed </h5>
+                <h5 class="card-title"> Osama Mohamed </h5>
               </div>
             </div>
             <!--------------->
@@ -71,7 +71,7 @@
                 <p class="card-text">
                   "Nourhan has a rare talent for turning complex ideas into seamless, user-friendly designs. Their ability to anticipate user needs and deliver intuitive by interfaces helped our product stand out in a competitive market. Their work consistently exceeds expectations."
                 </p>
-                <h5 class="card-title">Tarek Ahmed </h5>
+                <h5 class="card-title">Ibrahim Saad </h5>
               </div>
             </div>
             <!--------------->
@@ -87,7 +87,7 @@
                 <p class="card-text">
                   "Working with Nourhan is a game-changer for any development team. Their designs are not only visually appealing but also technically feasible and well-documented, making the implementation process smooth and efficient. Their collaborative approach fosters synergy between design and development."
                 </p>
-                <h5 class="card-title">Tarek Ahmed </h5>
+                <h5 class="card-title">Mohamed Ahmed </h5>
               </div>
             </div>
             <!--------------->
@@ -112,6 +112,7 @@ export default defineComponent({
   },
   data() {
     return {
+      isInView: false,
       settings: {
         itemsToShow: 1,
         snapAlign: "center",
@@ -136,6 +137,21 @@ export default defineComponent({
       } /*********/,
     };
   },
+
+    mounted(){
+        const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                this.isInView = true; // Trigger the animation
+                observer.unobserve(this.$refs.testmonials); // Stop observing after animation starts
+            }
+            });
+        },
+        { threshold: 0.5 } // Adjust this value for when the animation starts
+        );
+        observer.observe(this.$refs.testmonials);
+    }
 });
 </script>
 <style lang="scss" scoped>
@@ -202,7 +218,7 @@ h2 {
   color: #fff;
   font-size: 44px;
   line-height: 1.4;
-  width: 500px;
+// width: 500px;
   margin: auto;
   span {
     color: #d2beff;

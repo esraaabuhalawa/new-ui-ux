@@ -30,12 +30,23 @@
 
         <div class="col-lg-5 d-flex justify-content-center align-items-center">
           <div>
-            <div class="outer-circle">
+            <div class="img-container">
+                    <img
+                      src="../../assets/images/about-1.png"
+                      alt="Person"
+                      width="328"
+                      height="310"
+                    />
+                    <div class="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img src="../../assets/images/Decline.svg" />
+                    </div>
+                  </div>
+            <!----<div class="outer-circle">
               <div class="middle-circle">
                 <div class="inner-circle">
                   <div class="img-container">
                     <img
-                      src="../../assets/images/about-img.png"
+                      src="../../assets/images/about-1.png"
                       alt="Person"
                       width="328"
                       height="310"
@@ -46,7 +57,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div>-->
           </div>
         </div>
       </div>

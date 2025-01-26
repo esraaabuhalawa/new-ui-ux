@@ -223,6 +223,7 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+    z-index: 10;
 }
 
 .outer-circle,
@@ -286,7 +287,7 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+  //  border-radius: 50%;
 }
 
 /* Pulse animation */
@@ -322,10 +323,23 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
+
+   // width: 260px;
+   // height: 260px;
+   // border-radius: 50%;
     overflow: hidden;
+   &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 41, 41, 0.5); // Semi-transparent overlay
+    z-index: 2;
+    border-radius: 25px;
+  }
 }
 
 .play-icon {

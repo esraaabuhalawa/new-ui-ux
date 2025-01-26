@@ -14,26 +14,17 @@
     </div>
 
     <div class="container-fluid our-clients overflow-hidden">
-      <Carousel
-        v-bind="settings"
-        :breakpoints="breakpoints"
-        :autoplay="2000"
-        :wrap-around="true"
-      >
+      <Carousel v-bind="settings" :breakpoints="breakpoints" :autoplay="2000" :wrap-around="true">
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <div class="card">
-              <img
-                src="../../assets/images/project-4.png"
-                class="card-img-top"
-                alt="..."
-              />
+            <a href="https://www.behance.net/gallery/181767661/UX-case-study-Medical-website" target="blank" class="card text-decoration-none">
+              <img src="../../assets/images/project-4.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">UMEDMI</h5>
-                <p class="card-text">App - Web design</p>
+                <p class="card-text text-dark">App - Web design</p>
               </div>
-            </div>
+            </a>
             <!--------------->
           </div>
         </Slide>
@@ -41,17 +32,13 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <div class="card">
-              <img
-                src="../../assets/images/project-2.png"
-                class="card-img-top"
-                alt="..."
-              />
+            <a href="https://www.behance.net/gallery/200681071/Case-Study-Buy-2-(-Employee-Management-)" target="blank" class="card text-decoration-none">
+              <img src="../../assets/images/project-2.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">BUY2</h5>
-                <p class="card-text">App </p>
+                <p class="card-text text-dark">App </p>
               </div>
-            </div>
+            </a>
             <!--------------->
           </div>
         </Slide>
@@ -59,17 +46,13 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <div class="card">
-              <img
-                src="../../assets/images/project-.png"
-                class="card-img-top"
-                alt="..."
-              />
+            <a href="https://www.behance.net/gallery/212078273/ITAMEN-AI-Doctor-AI-Diagnosis" target="blank" class="card text-decoration-none">
+              <img src="../../assets/images/project-.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">ITAMEN -AI Diagnosis</h5>
-                <p class="card-text">Web Design</p>
+                <p class="card-text text-dark">Web Design</p>
               </div>
-            </div>
+            </a>
             <!--------------->
           </div>
         </Slide>
@@ -77,17 +60,13 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <div class="card">
-              <img
-                src="../../assets/images/project-4.png"
-                class="card-img-top"
-                alt="..."
-              />
+            <a href="https://www.behance.net/gallery/181767661/UX-case-study-Medical-website" target="blank" class="card text-decoration-none">
+              <img src="../../assets/images/project-4.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">UMEDMI</h5>
-                <p class="card-text">App - Web design</p>
+                <p class="card-text text-dark">App - Web design</p>
               </div>
-            </div>
+            </a>
             <!--------------->
           </div>
         </Slide>
@@ -95,17 +74,13 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <div class="card">
-              <img
-                src="../../assets/images/project-6.png"
-                class="card-img-top"
-                alt="..."
-              />
+            <a href="https://www.behance.net/gallery/200854539/Sari3-web-design-_-partner-dashboard" target="blank" class="card text-decoration-none">
+              <img src="../../assets/images/project-6.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Dashboard</h5>
-                <p class="card-text">App - Web design</p>
+                <p class="card-text text-dark">App - Web design</p>
               </div>
-            </div>
+            </a>
             <!--------------->
           </div>
         </Slide>
@@ -113,17 +88,13 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <div class="card">
-              <img
-                src="../../assets/images/project-7.png"
-                class="card-img-top"
-                alt="..."
-              />
+            <a class="card text-decoration-none" href="https://www.behance.net/gallery/193331345/Payment-HUB-web-design" target="blank">
+              <img src="../../assets/images/project-7.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Payment</h5>
-                <p class="card-text">App  HUB</p>
+                <p class="card-text text-dark">App HUB</p>
               </div>
-            </div>
+            </a>
             <!--------------->
           </div>
         </Slide>
@@ -131,17 +102,13 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <div class="card">
-              <img
-                src="../../assets/images/project-8.png"
-                class="card-img-top"
-                alt="..."
-              />
+            <a href="https://www.behance.net/gallery/186771099/PLAYIT-App-design-Chat-Enhancement" target="blank" class="card text-decoration-none">
+              <img src="../../assets/images/project-8.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">ITAMEN</h5>
-                <p class="card-text">App </p>
+                <h5 class="card-title">Play IT</h5>
+                <p class="card-text text-dark">App </p>
               </div>
-            </div>
+            </a>
             <!--------------->
           </div>
         </Slide>
@@ -149,55 +116,43 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <div class="card">
-              <img
-                src="../../assets/images/project-9.png"
-                class="card-img-top"
-                alt="..."
-              />
+            <a href="https://www.behance.net/gallery/200681071/Case-Study-Buy-2-(-Employee-Management-)" target="blank" class="card text-decoration-none">
+              <img src="../../assets/images/project-2.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Buy 2</h5>
-                <p class="card-text">App </p>
+                <h5 class="card-title">BUY2</h5>
+                <p class="card-text text-dark">App </p>
               </div>
-            </div>
+            </a>
             <!--------------->
           </div>
         </Slide>
 
-        
+
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <div class="card">
-              <img
-                src="../../assets/images/project-10.png"
-                class="card-img-top"
-                alt="..."
-              />
+            <a href="https://www.behance.net/gallery/212109485/ITAMEN-App-AI-doctors" target="blank" class="card text-decoration-none">
+              <img src="../../assets/images/project-10.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">ITAMEN -AI Diagnosis</h5>
-                <p class="card-text">web Design</p>
+                <p class="card-text text-dark">web Design</p>
               </div>
-            </div>
+            </a>
             <!--------------->
           </div>
         </Slide>
 
-         
+
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <div class="card">
-              <img
-                src="../../assets/images/project-11.png"
-                class="card-img-top"
-                alt="..."
-              />
+            <a href="https://www.behance.net/gallery/212269191/Domino-Game" target="blank" class="card text-decoration-none">
+              <img src="../../assets/images/project-11.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Domino Game</h5>
-                <p class="card-text">web Design</p>
+                <p class="card-text text-dark">web Design</p>
               </div>
-            </div>
+            </a>
             <!--------------->
           </div>
         </Slide>
@@ -273,11 +228,13 @@ export default defineComponent({
 .section__heading {
   padding-top: 70px;
   padding-bottom: 50px;
+
   a {
     display: inline-block;
     padding: 10px 40px;
     background: #42307d;
     color: #fff;
+    border: 2px solid #42307d;
     border-radius: 40px;
     font-size: 20px;
     text-transform: capitalize;
@@ -287,9 +244,12 @@ export default defineComponent({
 
     &:hover {
       transform: translateY(5px);
+      color: #42307d;
+      background: transparent;
     }
   }
 }
+
 .card {
   background-color: #7f56d90a;
   padding: 10px;
@@ -297,20 +257,25 @@ export default defineComponent({
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+
 .card-body {
   img {
     border: 2px solid #fff;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
-  font-family: "Poppins", sans-serif;
+
+  font-family: "Poppins",
+  sans-serif;
   text-align: start;
+
   .card-title {
     color: #42307d;
     font-size: 24px;
     font-weight: 500;
     text-transform: uppercase;
   }
+
   .card-text {
     font-size: 20px;
     font-weight: 500;

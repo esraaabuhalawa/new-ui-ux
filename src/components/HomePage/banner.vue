@@ -73,8 +73,8 @@
                         <img src="../../assets/images/Group13.png" >
                     </span>
 
-                   <div class="d-flex justify-content-center banner-img-container">
-                    <img src="../../assets/images/user-1.png" alt="banner image" class="image-1">
+                   <div class="d-flex justify-content-center banner-img-container ps-3">
+                    <img src="../../assets/images/user-2.png" alt="banner image" class="image-1">
                    </div>
                     <div class="d-flex justify-content-center bottom-container"> 
                         <div class="contact-bottom">
@@ -144,7 +144,7 @@
         text-align: center;
         flex-shrink: 0;
         .image-1{
-            transform: translateY(23px);
+            transform: translateY(40px);
         }
     }
     .bottom-container{

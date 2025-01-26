@@ -4,7 +4,7 @@
             <nav class="navbar-expand-lg" :class="['navbar ', { scrolled: isScrolled }]">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                        <img src="../../assets/images/logo.svg" class="img-fluid">
+                        <img src="../../assets/images/logo-1.svg" style="width: 60px;">
                     </a>
                     <ul class="navbar-nav" style="gap: 30px;">
                         <li class="nav-item">
