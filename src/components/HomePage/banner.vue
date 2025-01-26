@@ -15,8 +15,8 @@
                 </div>
                 
                 <div>
-                    <h1>
-                        I’m <span>Nourhan</span>, <br/> UX UI Designer
+                    <h1 class="typewriter">
+                        I’m <span>Nourhan</span>, <br /> UX UI Designer
                     </h1>
                 </div>
 
@@ -168,6 +168,10 @@
             font-size: 25px;
             text-decoration: none;
             font-weight: 400;
+            transition: .2s ease-in-out;
+            &:hover{
+                transform: translateY(5px);
+            }
         }
         a:nth-of-type(1){
             background: #42307D;
@@ -177,7 +181,12 @@
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            gap : 10px
+            border: 1px solid #42307D;
+            gap : 10px;
+           &:hover{
+            color: #42307D;
+            background: transparent;
+           }
         }
         a:nth-of-type(2){
             color: #42307D;
@@ -261,6 +270,9 @@
 }
 /*************************** */
     @media screen and (max-width :992.8px) {
+        .container{
+            padding-top: 20px;
+        }
         .hello p{
             margin-top: 25px;
         }
@@ -305,8 +317,10 @@
             left: 4%;
         }
         .group-10{
+            left: 161px;
+            top: 39px;
             img{
-                width: 70px;
+                width: 52px;
             }
         }
 
@@ -331,6 +345,53 @@
     }
 
     @media screen and (max-width :578px) {
+        .group-11,.group-9,.group-3,.group-6,.group-8,.group-13{
+            img{
+                width: 70px;
+            }
+        }
+        .group-5{
+            right: 1%;
+            top: 31%;
+        }
+        .group-4{
+            display: none;
+        }
+        .group-3{
+            top: 65%;
+            img{
+                width:  80px;
+            }
+        }
+        .group-15{
+            left: 14%;
+        }
+        .group-2{
+            top: 50%;
+            right: 8%;
+            img{
+                width: 60px;
+            }
+        }
+        .group-11{
+            left: 92px;
+        }
+        .group-12{
+            img{
+                width: 180px
+            }
+        }
+        .group-13{
+            left: 4%;
+        }
+        .group-10{
+            left: 150px;
+            top: 10px;
+            img{
+                width: 40px;
+            }
+        }
+
         .image-1{
             width: 164px !important; 
         }

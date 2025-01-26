@@ -161,10 +161,13 @@ export default {
         cursor: pointer;
         text-decoration: none;
         transition: all .5s ease-in-out;
-
+        border: 1px solid #42307D;
         &:hover {
             transform: translateY(5px);
+            color: #42307D;
+            background: transparent;
         }
+
     }
 }
 

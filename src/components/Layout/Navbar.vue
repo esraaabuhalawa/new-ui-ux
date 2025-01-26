@@ -11,14 +11,15 @@
                             <a class="nav-link active" aria-current="page" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#portofolio">Portofolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#Testmonials">Testimonials</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
+                   
                         <li class="nav-item">
                             <button> <a  href="tel:+1234567890" class="d-inline-block w-100"> Book Call Now </a></button>
                         </li>
@@ -52,17 +53,18 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav flex-column" style="gap: 30px;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Services</a>
+                            <a class="nav-link active" aria-current="page" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portofolio</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Testimonials</a>
+                            <a class="nav-link" href="#portofolio">Portofolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#Testmonials">Testimonials</a>
                         </li>
+                     
                         <li class="nav-item position-fixed" style="bottom: 15px;">
                             <button >Book Call Now</button>
                         </li>
@@ -80,6 +82,7 @@ export default {
         }
     },
     mounted() {
+        
     // Add scroll event listener when the component is mounted
     window.addEventListener('scroll', this.handleScroll);
   },

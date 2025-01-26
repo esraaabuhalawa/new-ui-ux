@@ -1,7 +1,7 @@
 <template>
-    <section id="services" class="">
-        <div class="section__heading ">
-            <h2 class="text-capitalize">My <span>services</span></h2>
+    <section id="services" ref="servicesSection"  class="">
+        <div class="section__heading text-center">
+            <h2 class="text-capitalize" :class="{ typewriter: isInView }">My <span>services</span></h2>
         </div>
         <div class="services-bg">
             <div class="container">
@@ -75,6 +75,30 @@
 
     </section>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      isInView: false, // Tracks whether the section is in view
+    };
+  },
+  mounted() {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            this.isInView = true; // Trigger the animation
+            observer.unobserve(this.$refs.servicesSection); // Stop observing after animation starts
+          }
+        });
+      },
+      { threshold: 0.5 } // Adjust this value for when the animation starts
+    );
+
+    observer.observe(this.$refs.servicesSection);
+  },
+}
+</script>
 <style lang="scss" scoped>
     .col-lg-4{
         display: flex; 

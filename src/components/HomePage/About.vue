@@ -1,7 +1,7 @@
 <template>
-  <section id="about">
-    <div class="section__heading">
-      <h2>A little <span>about</span> Me</h2>
+  <section id="about" ref="aboutSection" class="about-section ">
+    <div class="section__heading text-center" >
+      <h2 :class="{ typewriter: isInView }">A little <span>about</span> Me</h2>
     </div>
     <div class="container">
       <div class="row">
@@ -87,12 +87,12 @@
             </button>
           </div>
           <div class="modal-body" @click.stop>
-            <video ref="video" class="w-100" controls>
+            <video ref="video" class="w-100" height="400" controls>
               <source
-                src="../../assets/images/home/1321208-uhd_3840_2160_30fps.mp4"
+                src="../../assets/video-1.mp4"
                 type="video/mp4"
               />
-              Your browser does not support the video tag.
+              Your browser does not support the video tag. 
             </video>
           </div>
         </div>
@@ -102,6 +102,11 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      isInView: false, // Tracks whether the section is in view
+    };
+  },
   methods: {
     handleOutsideClick(event) {
       // Check if the click was outside the video
@@ -124,7 +129,21 @@ export default {
           this.video.currentTime = 0; // Optionally reset the video
         }
       });
-    }
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            this.isInView = true; // Trigger the animation
+            observer.unobserve(this.$refs.aboutSection); // Stop observing after animation starts
+          }
+        });
+      },
+      { threshold: 0.5 } // Adjust this value for when the animation starts
+    );
+
+    observer.observe(this.$refs.aboutSection);
   },
   beforeDestroy() {
     // Clean up event listener
