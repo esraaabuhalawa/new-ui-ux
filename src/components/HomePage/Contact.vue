@@ -34,7 +34,7 @@
                 </div>
                 <!----end of social----------->
                 <!--------email and whats----------->
-                <div class="d-flex justify-content-between align-items-center flex-column flex-md-row gap-3 email-accounts">
+                <div class="d-flex justify-content-between align-items-md-center flex-column flex-md-row gap-3 email-accounts">
                     <div>
                         <h4>Email me</h4>
                         <div>

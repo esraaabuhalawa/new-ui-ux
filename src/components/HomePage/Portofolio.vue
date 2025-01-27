@@ -43,42 +43,42 @@
 
                 <div class="col-lg-6 ">
                     <div class="exprience_line position-relative">
-                       <div class="left-img">
-                        <img src="../../assets/images/Frame11.png" alt="frame">
-                         </div>
+                        <div class="left-img">
+                            <img src="../../assets/images/Frame11.png" alt="frame">
+                        </div>
                         <div class="experience__item">
-                        <h3>Senior UI UX designer </h3>
-                        <div class="d-flex align-items-center gap-3">
-                            <span>
-                                Grand technology
-                            </span>
-                            <span>
-                                Sep 23- present
-                            </span>
+                            <h3>Senior UI UX designer </h3>
+                            <div class="d-flex align-items-center gap-3">
+                                <span>
+                                    Grand technology
+                                </span>
+                                <span>
+                                    Sep 23- present
+                                </span>
+                            </div>
+                            <p>
+                                Led the full design lifecycle for complex web
+                                and mobile applications, from conceptualization and user research to
+                                high-fidelity design and handoff
+                            </p>
                         </div>
-                        <p>
-                            Led the full design lifecycle for complex web
-                            and mobile applications, from conceptualization and user research to
-                            high-fidelity design and handoff
-                        </p>
-                    </div>
 
-                    <div class="mt-40 experience__item">
-                        <h3>Team lead </h3>
-                        <div class="d-flex align-items-center gap-3">
-                            <span>
-                                Misk it
-                            </span>
-                            <span>
-                                Sep 2022 - July 2023
-                            </span>
+                        <div class="mt-40 experience__item">
+                            <h3>Team lead </h3>
+                            <div class="d-flex align-items-center gap-3">
+                                <span>
+                                    Misk it
+                                </span>
+                                <span>
+                                    Sep 2022 - July 2023
+                                </span>
+                            </div>
+                            <p>
+                                Streamlined workflows, reducing project turnaround times and
+                                improving team productivity·
+                                Mentored junior designers, several of whom advanced to senior roles within the company
+                            </p>
                         </div>
-                        <p>
-                            Streamlined workflows, reducing project turnaround times and
-                            improving team productivity·
-                            Mentored junior designers, several of whom advanced to senior roles within the company
-                        </p>
-                    </div>
                     </div>
                 </div>
 
@@ -88,22 +88,22 @@
 </template>
 <script>
 export default {
-    data(){
-        return{
+    data() {
+        return {
             isInView: false,
         }
     },
-    mounted(){
+    mounted() {
         const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                this.isInView = true; // Trigger the animation
-                observer.unobserve(this.$refs.potfolioSection); // Stop observing after animation starts
-            }
-            });
-        },
-        { threshold: 0.5 } // Adjust this value for when the animation starts
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        this.isInView = true; // Trigger the animation
+                        observer.unobserve(this.$refs.potfolioSection); // Stop observing after animation starts
+                    }
+                });
+            },
+            { threshold: 0.5 } // Adjust this value for when the animation starts
         );
         observer.observe(this.$refs.potfolioSection);
     }
@@ -114,11 +114,13 @@ export default {
     margin-top: 80px;
     margin-bottom: 80px;
 }
+
 .section__heading {
     padding-bottom: 50px;
 }
-.experience__item{
-    h3{
+
+.experience__item {
+    h3 {
         font-family: "Poppins", sans-serif !important;
         color: #344054;
         font-size: 30px;
@@ -126,44 +128,78 @@ export default {
         line-height: 1.5;
         margin-bottom: 18px;
     }
-    span:nth-of-type(1){
+
+    span:nth-of-type(1) {
         color: #344054;
         font-size: 25px;
         font-weight: 500;
         line-height: 1.2;
     }
-    span:nth-of-type(2){
+
+    span:nth-of-type(2) {
         line-height: 1.2;
     }
-    p{
+
+    p {
         margin-top: 18px;
         margin-bottom: 15px;
     }
-    span:nth-of-type(2),p{
+
+    span:nth-of-type(2),
+    p {
         font-size: 18px;
         font-weight: normal;
         font-family: "Poppins", sans-serif !important;
         color: #98A2B3;
     }
 }
-.exprience_line{
+
+.exprience_line {
     padding-left: 70px;
 }
-.left-img{
+
+.left-img {
     position: absolute;
     left: -10px;
     top: 0;
 }
+
 @media screen and (max-width: 996px) {
-.exprience_line{
-    padding-left: 0px;
-    padding-top: 100px;
-} 
-.left-img {
+    .exprience_line {
+        padding-left: 0px;
+        padding-top: 100px;
+    }
+
+    .left-img {
         position: absolute;
         top: 154px;
         transform: rotate(90deg);
         right: 0;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .left-img {
+        top: 81px;
+    }
+
+    h2 {
+        white-space: pre-wrap;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .left-img {
+        top: 9px;
+    }
+    .experience__item {
+    h3 {
+        font-size: 25px;
+    }
+
+    span:nth-of-type(1) {
+        font-size: 20px;
+    }
+}
 }
 </style>

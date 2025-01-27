@@ -233,7 +233,7 @@ h2 {
   border-radius: 15px;
   color: #000;
   position: relative;
-  padding: 40px;
+  padding: 50px;
   text-align: left;
   .card-title {
     color: #F9FAFB;
@@ -278,6 +278,11 @@ h2 {
 @media screen and (max-width:992px) {
   .card-body {
     .card-text{height: auto;}
+  }
+  h2{
+    white-space: pre-wrap;
+    overflow-x:hidden;
+    font-size: 38px;
   }
 }
 </style>

@@ -183,8 +183,8 @@ export default defineComponent({
       // any settings not specified will fallback to the carousel settings
       breakpoints: {
         // 700px and up
-        700: {
-          itemsToShow: 2,
+        400: {
+          itemsToShow: 1.5,
           snapAlign: "center",
         },
         900: {
@@ -223,6 +223,13 @@ export default defineComponent({
   margin-right: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
+  align-items: flex-start;
+}
+
+.carousel__item{
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
 }
 
 .section__heading {
@@ -249,9 +256,13 @@ export default defineComponent({
     }
   }
 }
-
+.card-img-top{
+  height: 200px;
+}
 .card {
-  background-color: #7f56d90a;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
   padding: 10px;
   padding-bottom: 20px;
   border-top-left-radius: 20px;
@@ -259,6 +270,7 @@ export default defineComponent({
 }
 
 .card-body {
+  flex:1;
   img {
     border: 2px solid #fff;
     border-top-left-radius: 20px;

@@ -1,6 +1,6 @@
 <template>
   <section id="about" ref="aboutSection" class="about-section ">
-    <div class="section__heading text-center" >
+    <div class="section__heading text-center">
       <h2 :class="{ typewriter: isInView }">A little <span>about</span> Me</h2>
     </div>
     <div class="container">
@@ -31,16 +31,11 @@
         <div class="col-lg-5 d-flex justify-content-center align-items-center">
           <div>
             <div class="img-container">
-                    <img
-                      src="../../assets/images/about-1.png"
-                      alt="Person"
-                      width="328"
-                      height="310"
-                    />
-                    <div class="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <img src="../../assets/images/Decline.svg" />
-                    </div>
-                  </div>
+              <img src="../../assets/images/about-1.png" alt="Person" width="328" height="310" />
+              <div class="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="../../assets/images/Decline.svg" />
+              </div>
+            </div>
             <!----<div class="outer-circle">
               <div class="middle-circle">
                 <div class="inner-circle">
@@ -63,46 +58,22 @@
       </div>
     </div>
 
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-      ref="modal"
-    >
-      <div
-        class="modal-dialog modal-dialog-centered"
-        @click="handleOutsideClick"
-      >
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+      ref="modal">
+      <div class="modal-dialog modal-dialog-centered" @click="handleOutsideClick">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" data-bs-dismiss="modal" aria-label="Close"> 
-              <svg
-                class="w-6 h-6 text-gray-800 dark:text-white"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18 17.94 6M18 18 6.06 6"
-                />
+            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18 17.94 6M18 18 6.06 6" />
               </svg>
             </button>
           </div>
           <div class="modal-body" @click.stop>
             <video ref="video" class="w-100" height="400" controls>
-              <source
-                src="../../assets/video-1.mp4"
-                type="video/mp4"
-              />
+              <source src="../../assets/video-1.mp4" type="video/mp4" />
               Your browser does not support the video tag. test
             </video>
           </div>
@@ -173,11 +144,11 @@ export default {
     margin-bottom: 100px;
   }
 }
-
+/*
 .modal-dialog {
   max-width: 60%;
 }
-
+*/
 .modal-content {
   background: #fff;
   border: 0;
@@ -189,10 +160,9 @@ export default {
   padding-top: 20px;
 
   button {
-    background: #09445d;
+    background: #42307D;
     padding: 4px;
     border-radius: 5px;
   }
 }
-
 </style>

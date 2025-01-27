@@ -2,6 +2,7 @@
 
 body {
     font-family: var(--main-font) !important;
+    overflow-x: hidden;
 }
 
 /*******Main page***************/
@@ -449,6 +450,15 @@ button {
     align-items: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .service-arrow{
+        right: 1px;
+    }
+    .service-arrow-1{
+        width: 78px;
+        height: 78px;
+    }
+}
 /**Footer Section******/
 Footer {
     margin-top: 53px;
