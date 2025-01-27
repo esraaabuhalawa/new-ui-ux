@@ -32,8 +32,7 @@
             <div>
                 <img src="../../assets/images/logo-1.svg" style="width: 60px;">
             </div>
-            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample">
+            <button id="OpenMenu" class="btn" type="button" aria-controls="offcanvasExample">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                     width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
@@ -43,13 +42,13 @@
 
         <!--Offcanvas Start-->
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel"  ref="offcanvas">
+            aria-labelledby="offcanvasExampleLabel" ref="offcanvas">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasExampleLabel">
                     <img src="../../assets/images/logo-1.svg" style="width: 60px;">
                 </h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
-                @click="closeOffcanvas"></button>
+                    @click="closeOffcanvas"></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav flex-column" style="gap: 30px;">
@@ -79,35 +78,60 @@
 export default {
     data() {
         return {
-            isScrolled: false
-        }
+            isScrolled: false,
+        };
     },
     methods: {
         handleScroll() {
-            this.isScrolled = window.scrollY > 0; // Update state based on scroll position
+            // Update state based on scroll position
+            this.isScrolled = window.scrollY > 0;
         },
         closeOffcanvas(event) {
-      event.preventDefault(); // Prevent the default behavior
-      // Close the offcanvas programmatically
-      const offcanvasEl = this.$refs.offcanvas;
-      const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
-      if (bsOffcanvas) {
-        bsOffcanvas.hide();
-      }
-    },
+            event.preventDefault(); // Prevent the default behavior
+            // Close the offcanvas programmatically
+            const offcanvasEl = this.$refs.offcanvas;
+            const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+            if (bsOffcanvas) {
+                bsOffcanvas.hide();
+            }
+        },
+        toggleOffcanvas(event) {
+            event.preventDefault();
+            event.stopPropagation(); // Prevent scrolling to the top
+            const offcanvasEl = this.$refs.offcanvas;
+            let bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+
+            if (!bsOffcanvas) {
+                // Initialize the Bootstrap Offcanvas instance if not already done
+                bsOffcanvas = new bootstrap.Offcanvas(offcanvasEl);
+            }
+
+            bsOffcanvas.toggle(); // Toggle the offcanvas
+        },
     },
     mounted() {
-
         // Add scroll event listener when the component is mounted
         window.addEventListener('scroll', this.handleScroll);
+
+        // Setup the event listener for the menu toggle
+        const openMenuBtn = document.getElementById("OpenMenu");
+        if (openMenuBtn) {
+            openMenuBtn.addEventListener("click", this.toggleOffcanvas);
+        }
     },
     beforeDestroy() {
         // Remove scroll event listener to prevent memory leaks
         window.removeEventListener('scroll', this.handleScroll);
-    },
 
-}
+        // Clean up event listener for the menu button
+        const openMenuBtn = document.getElementById("OpenMenu");
+        if (openMenuBtn) {
+            openMenuBtn.removeEventListener("click", this.toggleOffcanvas);
+        }
+    },
+};
 </script>
+
 <style lang="scss" scoped>
 .navbar {
     margin-bottom: 30px;
