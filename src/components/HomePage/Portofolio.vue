@@ -167,14 +167,15 @@ export default {
 @media screen and (max-width: 996px) {
     .exprience_line {
         padding-left: 0px;
-        padding-top: 100px;
+        padding-top: 20px;
     }
 
     .left-img {
-        position: absolute;
+       /* position: absolute;
         top: 154px;
         transform: rotate(90deg);
-        right: 0;
+        right: 0;*/
+        display: none;
     }
 }
 
@@ -189,16 +190,24 @@ export default {
 }
 
 @media screen and (max-width: 556px) {
-    .left-img {
-        top: 9px;
-    }
     .experience__item {
     h3 {
         font-size: 25px;
     }
 
     span:nth-of-type(1) {
-        font-size: 20px;
+        font-size: 18px;
+    }
+}
+}
+@media screen and (max-width: 375px) {
+    .experience__item {
+    h3 {
+        font-size: 25px;
+    }
+
+    span:nth-of-type(1),span:nth-of-type(2) {
+        font-size: 16px;
     }
 }
 }

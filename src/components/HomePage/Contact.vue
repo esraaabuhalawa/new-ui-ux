@@ -109,6 +109,7 @@ img {
         font-weight: normal;
         font-size: 18px;
         text-decoration: none;
+        line-break: anywhere;
     }
     img{
         width: 24px;
@@ -133,6 +134,14 @@ img {
         color: #000;
         font-family: "Poppins", sans-serif;
         font-size: 18px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .email-accounts{
+        h4{padding-left: 0px;}
+        a{
+            font-size: 16px;
+        }
     }
 }
 </style>

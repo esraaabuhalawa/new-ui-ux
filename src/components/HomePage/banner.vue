@@ -80,7 +80,7 @@
                         <div class="contact-bottom">
                             <a href="https://www.behance.net/nourhanmahmoud7" target="blank">Porfolio <img
                                     src="../../assets/images/up right.png"></a>
-                            <a href="tel:+1234567890">Hire me</a>
+                            <!----<a href="tel:+1234567890">Hire me</a>-->
                         </div>
                     </div>
                 </div>
@@ -405,8 +405,7 @@ h1 {
     }
 }
 
-@media screen and (max-width :578px) {
-
+@media screen and  (max-width :578px) {
     .group-11,
     .group-9,
     .group-3,
@@ -414,10 +413,14 @@ h1 {
     .group-8,
     .group-13 {
         img {
-            width: 70px;
+            width: 63px;
         }
     }
-
+    .group-7 {
+        img{
+            width: 51px;
+        }
+    }
     .group-5 {
         right: 1%;
         top: 31%;
@@ -444,15 +447,28 @@ h1 {
         right: 8%;
 
         img {
-            width: 60px;
+            width: 50px;
         }
     }
-
-    .group-11 {
-        left: 92px;
+    .group-9{
+        right: 34%;
+        top: -6%;
     }
-
+    .group-6{
+        right: 20px;
+    }
+    .group-11 {
+        left: 77px;
+        top: 43px;
+    }
+    .group-7{
+        right: 17%;
+        top: -5%;
+    }
+    .group-14{display: none;}
     .group-12 {
+        left: -35px;
+        top: 74px;
         img {
             width: 180px
         }
@@ -463,11 +479,11 @@ h1 {
     }
 
     .group-10 {
-        left: 150px;
-        top: 10px;
+        left: 127px;
+        top: -3px;
 
         img {
-            width: 40px;
+            width: 35px;
         }
     }
 
@@ -544,6 +560,100 @@ h1 {
     .group-7 {
         img {
             width: 79px;
+        }
+    }
+}
+
+@media screen and (max-width:378px) {
+    .group-11,
+    .group-9,
+    .group-3,
+    .group-6,
+    .group-8,
+    .group-13 {
+        img {
+            width: 60px !important;
+        }
+    }
+
+    .group-5 {
+        right: 1%;
+        top: 31%;
+    }
+
+    .group-4 {
+        display: none;
+    }
+
+    .group-3 {
+        top: 65%;
+
+        img {
+            width: 60px;
+        }
+    }
+
+    .group-15 {
+        left: 14%;
+    }
+    .group-7{
+        right: 17%;
+        top: -5%;
+    }
+ 
+    .group-2 {
+        top: 50%;
+        right: 8%;
+
+        img {
+            width: 49px;
+        }
+    }
+
+    .group-9{
+        right: 34%;
+        top: -6%;
+    }
+  
+    .group-11 {
+        left: 56px;
+        top: 48px;
+    }
+
+    .group-12 {
+        left: -14px;
+        top: 74px;
+        img {
+            width: 120px;
+        }
+    }
+    .group-7{
+        right: 66px;
+        top: 0px;
+        img{
+            width: 38px !important;
+        }
+    }
+    .group-13 {
+        left: 4%;
+    }
+
+    .group-10 {
+        left: 111px;
+        top: 0px;
+
+        img {
+            width: 35px;
+        }
+    }
+
+    .image-1 {
+        width: 164px !important;
+    }
+
+    span {
+        img {
+            width: 30px;
         }
     }
 }

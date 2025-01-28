@@ -175,5 +175,20 @@ export default {
     .col-lg-3{
         margin-bottom: 40px;
     }
+
+}
+@media screen and (max-width: 768px) {
+    .container{  
+        .row {
+            padding-top: 43px;
+            padding-bottom: 43px;
+            margin-bottom: 30px;
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .container {
+        padding: 20px;
+    }
 }
 </style>

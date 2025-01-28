@@ -5,11 +5,12 @@
         <div class="col-lg-7">
           <h2>Lets have a look at my <span>Portfolio</span></h2>
         </div>
-        <div class="col-lg-2 offset-lg-3">
+        <div class="col-12 offset-sm-0 col-lg-2 offset-lg-3">
           <a href="https://www.behance.net/nourhanmahmoud7" target="blank">
             see all
           </a>
         </div>
+        <div style="clear: both;"></div>
       </div>
     </div>
 
@@ -18,7 +19,8 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <a href="https://www.behance.net/gallery/181767661/UX-case-study-Medical-website" target="blank" class="card text-decoration-none">
+            <a href="https://www.behance.net/gallery/181767661/UX-case-study-Medical-website" target="blank"
+              class="card text-decoration-none">
               <img src="../../assets/images/project-4.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">UMEDMI</h5>
@@ -32,7 +34,8 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <a href="https://www.behance.net/gallery/200681071/Case-Study-Buy-2-(-Employee-Management-)" target="blank" class="card text-decoration-none">
+            <a href="https://www.behance.net/gallery/200681071/Case-Study-Buy-2-(-Employee-Management-)" target="blank"
+              class="card text-decoration-none">
               <img src="../../assets/images/project-2.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">BUY2</h5>
@@ -46,7 +49,8 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <a href="https://www.behance.net/gallery/212078273/ITAMEN-AI-Doctor-AI-Diagnosis" target="blank" class="card text-decoration-none">
+            <a href="https://www.behance.net/gallery/212078273/ITAMEN-AI-Doctor-AI-Diagnosis" target="blank"
+              class="card text-decoration-none">
               <img src="../../assets/images/project-.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">ITAMEN -AI Diagnosis</h5>
@@ -60,7 +64,8 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <a href="https://www.behance.net/gallery/181767661/UX-case-study-Medical-website" target="blank" class="card text-decoration-none">
+            <a href="https://www.behance.net/gallery/181767661/UX-case-study-Medical-website" target="blank"
+              class="card text-decoration-none">
               <img src="../../assets/images/project-4.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">UMEDMI</h5>
@@ -74,7 +79,8 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <a href="https://www.behance.net/gallery/200854539/Sari3-web-design-_-partner-dashboard" target="blank" class="card text-decoration-none">
+            <a href="https://www.behance.net/gallery/200854539/Sari3-web-design-_-partner-dashboard" target="blank"
+              class="card text-decoration-none">
               <img src="../../assets/images/project-6.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Dashboard</h5>
@@ -88,7 +94,8 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <a class="card text-decoration-none" href="https://www.behance.net/gallery/193331345/Payment-HUB-web-design" target="blank">
+            <a class="card text-decoration-none" href="https://www.behance.net/gallery/193331345/Payment-HUB-web-design"
+              target="blank">
               <img src="../../assets/images/project-7.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Payment</h5>
@@ -102,7 +109,8 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <a href="https://www.behance.net/gallery/186771099/PLAYIT-App-design-Chat-Enhancement" target="blank" class="card text-decoration-none">
+            <a href="https://www.behance.net/gallery/186771099/PLAYIT-App-design-Chat-Enhancement" target="blank"
+              class="card text-decoration-none">
               <img src="../../assets/images/project-8.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Play IT</h5>
@@ -116,7 +124,8 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <a href="https://www.behance.net/gallery/200681071/Case-Study-Buy-2-(-Employee-Management-)" target="blank" class="card text-decoration-none">
+            <a href="https://www.behance.net/gallery/200681071/Case-Study-Buy-2-(-Employee-Management-)" target="blank"
+              class="card text-decoration-none">
               <img src="../../assets/images/project-2.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">BUY2</h5>
@@ -131,7 +140,8 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <a href="https://www.behance.net/gallery/212109485/ITAMEN-App-AI-doctors" target="blank" class="card text-decoration-none">
+            <a href="https://www.behance.net/gallery/212109485/ITAMEN-App-AI-doctors" target="blank"
+              class="card text-decoration-none">
               <img src="../../assets/images/project-10.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">ITAMEN -AI Diagnosis</h5>
@@ -146,7 +156,8 @@
         <Slide>
           <div class="carousel__item">
             <!--------------->
-            <a href="https://www.behance.net/gallery/212269191/Domino-Game" target="blank" class="card text-decoration-none">
+            <a href="https://www.behance.net/gallery/212269191/Domino-Game" target="blank"
+              class="card text-decoration-none">
               <img src="../../assets/images/project-11.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Domino Game</h5>
@@ -226,7 +237,7 @@ export default defineComponent({
   align-items: flex-start;
 }
 
-.carousel__item{
+.carousel__item {
   height: 100%;
   width: 100%;
   background-color: #fff;
@@ -256,9 +267,11 @@ export default defineComponent({
     }
   }
 }
-.card-img-top{
+
+.card-img-top {
   height: 200px;
 }
+
 .card {
   display: flex;
   height: 100%;
@@ -270,7 +283,8 @@ export default defineComponent({
 }
 
 .card-body {
-  flex:1;
+  flex: 1;
+
   img {
     border: 2px solid #fff;
     border-top-left-radius: 20px;
@@ -293,5 +307,43 @@ export default defineComponent({
     font-weight: 500;
     text-transform: uppercase;
   }
+}
+
+@media screen and (max-width : 992px) {
+  .section__heading {
+    h2{
+      font-size: 35px;
+    }
+    a{
+      font-size: 18px;
+    }
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width : 768px) {
+  .section__heading {
+    a{
+      float: right;
+      
+    }
+
+  }
+}
+@media screen and (max-width : 568px) {
+  .section__heading {
+    a{
+      padding: 10px 25px;
+    }
+  }
+  .card-body{
+    .card-title {
+      font-size: 20px;
+    }
+    .card-text {
+    font-size: 18px;
+  }
+  }
+
 }
 </style>
